@@ -1,0 +1,155 @@
+
+.display-table{
+  display: table;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.display-cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cutie{
+  border: 1px solid #ccc;
+  background-color:#fff;
+  margin: auto;
+  max-width: 1200px;
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  color: rgb(0,0,0,0.3); 
+  box-shadow: 2px 2px 20px 2px;
+}
+
+p,label,span,h1,h2,h3,h4,h5,h6{
+  color: #212529;
+}
+
+
+h1{
+  font-weight: 100;
+}
+
+.continut{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.w-100{
+  width:100%;
+  padding:0;
+  display: flex;
+}
+
+.flex-weap{
+  flex-wrap: wrap; 
+}
+
+.w-50{
+  flex-wrap: wrap;  
+  display: flex;
+  float: left;
+  width:50%;
+}
+
+small{
+  color:#9cb9ff;
+  font-style: oblique;
+}
+
+.w-100 > .w-50:nth-child(2){
+  padding-left: 20px;
+}
+
+
+label{
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+
+input[type=tel],input[type=email],input[type=date],input[type=number], input[type=text], input[type=password], textarea, select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-style: oblique;
+}
+
+h1{
+  margin: 0;
+  font-weight: 900;
+}
+
+ul{
+  padding:0; 
+  margin: 0;
+}
+
+ul li {
+  display:inline;
+  padding-right: 20px;
+}
+
+li > label{
+  margin-top: 12px;
+}
+
+.intoarcere{
+  padding-top: 22px;
+  margin: 0;
+  width: 100%
+}
+
+.limbaje {
+  padding-bottom: 40px;
+}
+
+.limbaje p {
+  padding-top: 20px;
+  margin: 0;
+}
+
+input[type=number]:hover::-webkit-inner-spin-button {  
+  width: 20px;
+  height: 35px;
+}
+
+input[type=number]:focus::-webkit-inner-spin-button {  
+  width: 20px;
+  height: 35px;
+}
+
+input[type=checkbox]
+{
+  transform: scale(1.2);
+}
+
+.butoane{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.butoane p{
+  text-align: center;
+  color: red;
+  font-style: oblique;
+}
+
+.trimite_rezervarea{
+  width: 50%;
+  padding: 20px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 22px;
+  background: #b48a7c;
+  color:#fff;
+  font-style:normal;
+}
+

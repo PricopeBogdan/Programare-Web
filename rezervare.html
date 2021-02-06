@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+  <title>Hotel LAGUNA - Wellness&Spa </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/style_rezervare.css" />
+  <script src='Search_field.js'> </script> 
+  <script src='data.js'> </script> 
+  <link rel="shortcut icon" href="style/favicon.ico"/>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Hotel <span class="logo_colour">LAGUNA****</span></a></h1>
+          <h2>Wellness & Spa</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="camere.html">Camere</a></li>
+          <li><a href="tarife.html">Tarife</a></li>
+          <li class="selected"><a href="rezervare.html">Rezervare</a></li>
+          <li><a href="contact.html">Contactează-ne</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+	  <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h4><b>Recenzii</b></h4> &nbsp;
+            <h5><i>Cosmin,</i></h5>
+            <p>Cel mai tare hotel. Servicii ireproșile!</p>
+            <h5><i>Vladimir,</i></h5>
+            <p>Recomand. Sejur de vis!</p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Link-uri utile</h3>
+            <ul>
+              <li><a href="https://weather.com/weather/today/l/44.26,28.62?par=google&temp=c">Meteo</a><br/></li>
+              <li><a href="https://www.horoscop.ro/">Horoscop</a><br/></li>
+              <li><a href="https://www.iconcert.ro/tag/concerte-litoral">Concerte pe litoral</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Caută în site</h3>
+            <form method="post" action="#" id="search_form">
+             
+                <input class="search" type="search" id="search_field" autocomplete="off" />
+                <button type="button" class = "button" onclick="Cauta()" >Caută</button>
+              
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+       
+        <div id="content">
+            <div class="display-table">
+                <div class="display-cell">
+                  <div class="cutie">
+                    <form action="connect.php" method="POST">
+                      <h1>FORMULAR DE REZERVARE</h1>
+                      <div class="w-100">
+                        <div class="w-50">
+                          <label for="nume">Nume</label>
+                          <input type="text" id="nume" placeholder="Pricope..." name="nume" required>
+                        </div>
+                        <div class="w-50">
+                          <label for="prenume">Prenume</label>
+                          <input type="text" id="prenume" placeholder="Bogdan..." name="prenume" required>
+                        </div>
+                      </div>
+                  
+                      <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" size="30"  placeholder="email@provider.com" name="email" required>  
+                      </div>
+                      
+                      <div class="w-100">
+                        <div class="w-50">
+                          <label for="data_checkin">Data Check-In<br></label>
+                          <input type="date" id="data_checkin" name="data_checkin" max="2030-12-31" onchange="Data()">
+                        </div>
+
+                       
+                          <div class="w-50">
+                            <label for="data_checkout">Data Check-Out<br/></label>
+                            <input type="date" id="data_checkout" name="data_checkout" max="2030-12-31" onchange="Data()">
+                          </div>
+                        </div>
+                                                
+                          <div class="w-50">
+                          <label for="telefon">Numar de telefon<br><small>Trebuie sa aiba formatul ****.***.***</small></label>
+                          <input type="tel" id="telefon" name="telefon" placeholder="0747.936.***" pattern="[0-9]{4}.[0-9]{3}.[0-9]{3}">
+                          </div>
+                      <div>
+                        <br><br><br><br><br><br><br>
+                        <label for="uni">Tipul de cameră</label>
+                        <select id="uni" name="uni">
+                          <option value="Cameră Single">Cameră Single</option>
+                          <option value="Cameră Dublă Twin">Cameră Dublă Twin</option>
+                          <option value="Cameră Dublă Queen">Cameră Dublă Queen</option>
+                        </select>
+                      </div>
+                      <div class="butoane">
+                        <button class="trimite_rezervarea" type="submit" name="Trimite" >Trimite rezervarea*</button>
+                    
+                        <br><p>*Imediat ce vom verifica disponibilitatea rezervării solicitate, vă vom contacta pentru confirmare!</p>
+                      </div>
+                    </form>
+                    </div>        
+            </div>
+            </div>
+        </div>
+      </div>
+      <div id="content_footer"></div>
+      <div id="footer">
+        <p><a href="index.html">Acasă</a> | <a href="Camere.html">Camere</a> | <a href="Tarife.html">Tarife</a> | <a href="Rezervare.html">Rezervare</a> | <a href="contact.html">Contactează-ne</a></p>
+        <p style="color: white;">Copyright &copy; Pricope Bogdan - Vasile</p>
+      </div>
+    </div>
+  </body>
+  </html>
+            
+            
+
+        
